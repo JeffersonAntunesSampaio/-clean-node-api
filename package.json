@@ -4,15 +4,15 @@
   "description": "Curso Gratuito de NodeJS - Rodrigo Manguinho",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "lint-staged": {
     "*.js": [
-      "standard --fix", 
+      "standard --fix",
       "git add"
     ]
   },
-  "husky":{
+  "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/JeffersonAntunesSampaio/clean-node-api#readme",
   "devDependencies": {
     "husky": "^4.0.0-beta.5",
+    "jest": "^27.3.1",
     "lint": "^1.1.2",
     "staged": "0.0.0",
     "standard": "^16.0.4"
